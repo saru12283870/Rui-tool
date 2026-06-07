@@ -2,3 +2,13 @@
 <button id="add">追加</button>
 <button id="delete">削除</button>
 <h1>結果:<span id="result"></span></h1>
+<script>
+    document.getElementById("add").setAttribute("onclick", "add()")
+    let len = 0
+    function add() {
+        let i = document.createElemen("input")
+        i.setAttribute("id", len)
+        document.appendChild(i)
+        len = len + 1
+    }
+</script>
